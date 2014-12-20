@@ -1,0 +1,45 @@
+// colors
+@main-color: #1d365d;
+@header-color: #b9c8e0;
+@background-grey: #f7f7f7;
+@white: #ffffff;
+
+// widths
+@body-width: 820px;
+@body-padding: 15px;
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: @background-grey;
+}
+
+.header {
+  background-color: @main-color;
+  color: @header-color;
+  padding: 10px 20px;
+}
+
+.bodyContent {
+  background-color: @white;
+  width: @body-width;
+  margin: 0 auto;
+  padding: @body-padding;
+
+  .bodySection {
+    width: @body-width;
+    margin: 15px 0;
+    .title {
+      display: inline-block;
+      width: 185px;
+      margin-right: 15px;
+      vertical-align: top;
+    }
+    .content {
+      display: inline-block;
+      width: 615px;
+    }
+  }
+} 
+

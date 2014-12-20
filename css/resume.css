@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.header {
+  background-color: #1d365d;
+  color: #b9c8e0;
+  padding: 10px 20px;
+}
+.bodyContent {
+  background-color: #ffffff;
+  width: 820px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.bodyContent .bodySection {
+  width: 820px;
+  margin: 15px 0;
+}
+.bodyContent .bodySection .title {
+  display: inline-block;
+  width: 185px;
+  margin-right: 15px;
+  vertical-align: top;
+}
+.bodyContent .bodySection .content {
+  display: inline-block;
+  width: 615px;
+}
