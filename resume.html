@@ -10,6 +10,10 @@
     <link href="css/resume.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <!-- TODO logos, contact, etc. clickable -->
+    <!-- better font -->
+    <!-- header image -->
+    <!-- header scroll with page -->
     <div class="header">
       <div class="topBar"></div>
       <div class="info">
@@ -34,7 +38,31 @@
           Technical
         </div>
         <div class="content">
-          Langauges, Technologies, Frameworks, Toolkits
+          <ul class="skillsList">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Dust.js</li>
+            <li>Apach Velocity</li>
+            <li>jQuery</li>
+            <li>MooTools</li>
+            <li>LessCSS</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>Apach Hive</li>
+            <li>MS SQL Server</li>
+            <li>SQL Server Analysis Services</li>
+            <li>Android</li>
+            <li>C++</li>
+            <li>Scheme</li>
+            <li>C# .NET</li>
+            <li>SML</li>
+            <li>Visual Basic</li>
+            <li>IntelliJ</li>
+            <li>Eclipse</li>
+            <li>Subversion</li>
+            <li>Git</li>
+          </ul>
         </div>
       </div>
 
@@ -43,10 +71,22 @@
           Work Experience 
         </div>
         <div class="content">
-          TripAdvisor LLC
-          Software Engineer
-          August 2012 - Present
-          Newton, MA, USA
+          <img class="logo bigger" src="images/tripadvisor.jpg">
+          <div class="job">
+            <div class="companyName">TripAdvisor LLC</div>
+            <div class="jobTitle">Software Engineer</div>
+            <div class="jobMetaData">August 2012 - Present | Newton, MA, USA</div>
+          </div>
+
+          <!-- Present position - use present tense -->
+          <ul>
+            <li>Full-stack web development on TripAdvisor's core consumer product/pages (hotels search, price comparison, instant booking)</li>
+            <li>Design and implement new products and A/B tests within the TripAdvisor stack (Java, PostgreSQL, JavaScript, Velocity, Dust.js, LessCSS)</li>
+            <li>Key contributor and member on instant booking team designing a single page web-app to allow users to book and pay for hotels without leaving TripAdvisor</li>
+            <li>Excel in fast-paced environment and take ownership of projects from product design and specification through to verification and maintenance in production environment</li>
+            <li>Data analysis using Hive/Hadoop and MS SQL Server Analysis Services</li>
+            <li>Redesign and improve internal web apps for improving and maintaining the content displayed on the site</li>
+          </ul>
         </div>
       </div>
 
@@ -55,36 +95,53 @@
           Internships
         </div>
         <div class="content">
+
+          <!-- Past positions - use past tense -->
           <div class="mainInternship">
-            Mozilla Corporation -- with detail***
-            Software Engineering Intern
-            September - December 2011
-            Mountain View, CA, USA
+            <img class="logo short" src="images/mozilla.png">
+            <div class="job">
+              <div class="companyName">Mozilla Corporation</div>
+              <div class="jobTitle">Software Engineering Intern</div>
+              <div class="jobMetaData">September - December 2011 | Mountain View, CA, USA</div>
+            </div>
+            <ul>
+              <li>Worked on a team of three to implement new Firefox Sync client for Android</li>
+              <li>Primary developer of Mozilla’s Device Manger prototype</li>
+            </ul>
           </div>
-          <div class="otherInternShips">
+
+          <div class="otherInternships">
             <div class="internshipNoDetail">
-              Infonova GmbH.
-              Softare and Data Engineer
-              January - April 2011
-              Graz, Austria
+              <img class="logo short" src="images/infonova.jpg">
+            <div class="job">
+              <div class="companyName">Infonova GmbH.</div>
+              <div class="jobTitle">Softare and Data Engineer</div>
+              <div class="jobMetaData">January - April 2011 | Graz, Austria</div>
+            </div>
             </div>
             <div class="internshipNoDetail">
-              Varicent Software Inc.
-              Softare Developer
-              May - August 2010
-              Toronto, ON, Canada
+              <img class="logo short" src="images/varicent.jpg">
+              <div class="job">
+                <div class="companyName">Varicent Software Inc.</div>
+                <div class="jobTitle">Softare Developer</div>
+                <div class="jobMetaData">May - August 2010 | Toronto, ON, Canada</div>
+              </div>
             </div>
             <div class="internshipNoDetail">
-              Public Safety Canada
-              Information Management Co-op
-              Sepetember - December 2009
-              Ottawa, ON, Canada
+              <img class="logo short wider" src="images/goc.png">
+              <div class="job">
+                <div class="companyName">Public Safety Canada</div>
+                <div class="jobTitle">Information Management Co-op</div>
+                <div class="jobMetaData">Sepetember - December 2009 | Ottawa, ON, Canada</div>
+              </div>
             </div>
             <div class="internshipNoDetail">
-              Kaleidescape
-              Quality Assurance Co-op
-              May - August 2008 &amp; January - April 2009
-              Waterloo, ON, Canada
+              <img class="logo wide" src="images/kaleidescape.png">
+              <div class="job">
+                <div class="companyName">Kaleidescape</div>
+                <div class="jobTitle">Quality Assurance Co-op</div>
+                <div class="jobMetaData">May - August 2008 &amp; January - April 2009 | Waterloo, ON, Canada</div>
+              </div>
             </div>
           </div>
         </div>
@@ -95,6 +152,7 @@
           Education
         </div>
         <div class="content">
+          <img class="logo" src="images/uw.jpg">
           Bachelor of Software Engineering, Business Option
           University of Waterloo - Class of 2012
           Project: Taedium (one liner with link to Android app)

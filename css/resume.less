@@ -27,6 +27,7 @@ html, body {
   margin: 0 auto;
   padding: @body-padding;
 
+  
   .bodySection {
     width: @body-width;
     margin: 15px 0;
@@ -39,7 +40,46 @@ html, body {
     .content {
       display: inline-block;
       width: 615px;
+      
+      .skillsList {
+        padding-left: 0;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          list-style: none;
+          width: 195px;
+          margin-right: 5px;
+        }
+      }
+
+      .job {
+        display: inline-block
+      }
     }
+
   }
 } 
+
+.logo {
+  width: 60px;
+  height: 60px;
+
+  &.short {
+    height: 20px;
+  }
+
+  &.wide {
+    width: 75px;
+  }
+    
+  &.wider {
+    width: 100px;
+  }
+
+  &.bigger {
+    width: 75px;
+    height: 75px;
+  }
+}
 
