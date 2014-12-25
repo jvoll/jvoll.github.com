@@ -3,6 +3,11 @@ body {
   margin: 0;
   height: 100%;
   background-color: #f7f7f7;
+  font-size: 14px;
+}
+html ul,
+body ul {
+  margin: 0;
 }
 .header {
   background-color: #1d365d;
@@ -31,7 +36,6 @@ body {
 }
 .bodyContent .bodySection .content .skillsList {
   padding-left: 0;
-  margin: 0;
 }
 .bodyContent .bodySection .content .skillsList li {
   display: inline-block;
@@ -39,8 +43,43 @@ body {
   width: 195px;
   margin-right: 5px;
 }
-.bodyContent .bodySection .content .job {
+.bodyContent .bodySection .content .jobRow {
+  height: 70px;
+}
+.bodyContent .bodySection .content .jobRow .logoHolder {
   display: inline-block;
+  margin-right: 5px;
+}
+.bodyContent .bodySection .content .jobRow .logoHolder .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bodyContent .bodySection .content .jobRow .job {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bodyContent .bodySection .content .jobRow .job .companyName {
+  font-size: 18px;
+  font-weight: bold;
+}
+.bodyContent .bodySection .content .jobRow .job .jobTitle {
+  font-size: 18px;
+}
+.bodyContent .bodySection .content .internshipNoDetail {
+  display: inline-block;
+  width: 300px;
+}
+.bodyContent .bodySection .content .internshipNoDetail.left {
+  margin-right: 10px;
+}
+.bodyContent .bodySection .content .internshipNoDetail.left .logoHolder {
+  width: 100px;
+}
+.bodyContent .bodySection .content .internshipNoDetail.left .job {
+  width: 190px;
+}
+.bodyContent .bodySection .content .internshipNoDetail .job {
+  width: 200px;
 }
 .logo {
   width: 60px;
@@ -54,8 +93,4 @@ body {
 }
 .logo.wider {
   width: 100px;
-}
-.logo.bigger {
-  width: 75px;
-  height: 75px;
 }

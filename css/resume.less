@@ -13,6 +13,10 @@ html, body {
   margin: 0;
   height: 100%;
   background-color: @background-grey;
+  font-size: 14px;
+  ul {
+    margin: 0;
+  }
 }
 
 .header {
@@ -43,7 +47,6 @@ html, body {
       
       .skillsList {
         padding-left: 0;
-        margin: 0;
 
         li {
           display: inline-block;
@@ -53,8 +56,51 @@ html, body {
         }
       }
 
-      .job {
-        display: inline-block
+      .jobRow {
+        height: 70px;
+  
+        .logoHolder {
+          display: inline-block;
+          margin-right: 5px;
+
+          .logo {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .job {
+          display: inline-block;
+          vertical-align: middle;
+          
+          .companyName {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          .jobTitle {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .internshipNoDetail {
+          display: inline-block;
+          width: 300px;
+
+          &.left {
+            margin-right: 10px;
+            .logoHolder {
+              width: 100px;
+            }
+            .job {
+              width: 190px;
+            }
+          }
+
+          .job {
+            width: 200px;
+          }
       }
     }
 
@@ -77,9 +123,5 @@ html, body {
     width: 100px;
   }
 
-  &.bigger {
-    width: 75px;
-    height: 75px;
-  }
 }
 
