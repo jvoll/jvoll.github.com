@@ -13,9 +13,11 @@ html, body {
   margin: 0;
   height: 100%;
   background-color: @background-grey;
+  font-family: Oxygen, sans-serif;
   font-size: 14px;
   ul {
     margin: 0;
+    padding-left: 10px;
   }
 }
 
@@ -31,6 +33,11 @@ html, body {
   margin: 0 auto;
   padding: @body-padding;
 
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: @header-color;
+  }
   
   .bodySection {
     width: @body-width;
@@ -57,15 +64,18 @@ html, body {
       }
 
       .jobRow {
-        height: 70px;
+        //height: 70px;
+        margin-bottom: 10px;
   
         .logoHolder {
           display: inline-block;
           margin-right: 5px;
+          vertical-align: middle;
 
           .logo {
             display: inline-block;
             vertical-align: middle;
+            float: right;
           }
         }
 
@@ -83,23 +93,35 @@ html, body {
           }
         }
       }
+      
+      .mainInternship {
+        margin-bottom: 10px;
+        & .jobRow {
+          margin-bottom: 5px;
+        }
+      }
 
       .internshipNoDetail {
           display: inline-block;
           width: 300px;
 
-          &.left {
-            margin-right: 10px;
-            .logoHolder {
+          .logoHolder {
               width: 100px;
+           }
+           .job {
+             width: 190px;
+           }
+
+          &.right {
+            .logoHolder {
+              width: 90px;
             }
             .job {
-              width: 190px;
+              width: 200px;
             }
           }
-
-          .job {
-            width: 200px;
+          &.left {
+            margin-right: 10px;
           }
       }
     }
@@ -111,7 +133,21 @@ html, body {
   width: 60px;
   height: 60px;
 
+  &.infonova {
+    width: 80px;
+    height: 30px;
+  }
+
+  &.varicent {
+    width: 90px;
+    height: 30px;
+  }
+
   &.short {
+    height: 50px;
+  }
+
+  &.shorter {
     height: 20px;
   }
 

@@ -3,11 +3,13 @@ body {
   margin: 0;
   height: 100%;
   background-color: #f7f7f7;
+  font-family: Oxygen, sans-serif;
   font-size: 14px;
 }
 html ul,
 body ul {
   margin: 0;
+  padding-left: 10px;
 }
 .header {
   background-color: #1d365d;
@@ -19,6 +21,11 @@ body ul {
   width: 820px;
   margin: 0 auto;
   padding: 15px;
+}
+.bodyContent .divider {
+  border: none;
+  height: 1px;
+  background-color: #b9c8e0;
 }
 .bodyContent .bodySection {
   width: 820px;
@@ -44,15 +51,17 @@ body ul {
   margin-right: 5px;
 }
 .bodyContent .bodySection .content .jobRow {
-  height: 70px;
+  margin-bottom: 10px;
 }
 .bodyContent .bodySection .content .jobRow .logoHolder {
   display: inline-block;
   margin-right: 5px;
+  vertical-align: middle;
 }
 .bodyContent .bodySection .content .jobRow .logoHolder .logo {
   display: inline-block;
   vertical-align: middle;
+  float: right;
 }
 .bodyContent .bodySection .content .jobRow .job {
   display: inline-block;
@@ -65,27 +74,47 @@ body ul {
 .bodyContent .bodySection .content .jobRow .job .jobTitle {
   font-size: 18px;
 }
+.bodyContent .bodySection .content .mainInternship {
+  margin-bottom: 10px;
+}
+.bodyContent .bodySection .content .mainInternship .jobRow {
+  margin-bottom: 5px;
+}
 .bodyContent .bodySection .content .internshipNoDetail {
   display: inline-block;
   width: 300px;
 }
-.bodyContent .bodySection .content .internshipNoDetail.left {
-  margin-right: 10px;
-}
-.bodyContent .bodySection .content .internshipNoDetail.left .logoHolder {
+.bodyContent .bodySection .content .internshipNoDetail .logoHolder {
   width: 100px;
 }
-.bodyContent .bodySection .content .internshipNoDetail.left .job {
+.bodyContent .bodySection .content .internshipNoDetail .job {
   width: 190px;
 }
-.bodyContent .bodySection .content .internshipNoDetail .job {
+.bodyContent .bodySection .content .internshipNoDetail.right .logoHolder {
+  width: 90px;
+}
+.bodyContent .bodySection .content .internshipNoDetail.right .job {
   width: 200px;
+}
+.bodyContent .bodySection .content .internshipNoDetail.left {
+  margin-right: 10px;
 }
 .logo {
   width: 60px;
   height: 60px;
 }
+.logo.infonova {
+  width: 80px;
+  height: 30px;
+}
+.logo.varicent {
+  width: 90px;
+  height: 30px;
+}
 .logo.short {
+  height: 50px;
+}
+.logo.shorter {
   height: 20px;
 }
 .logo.wide {
