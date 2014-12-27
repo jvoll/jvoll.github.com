@@ -1,8 +1,11 @@
 // colors
 @main-color: #1d365d;
 @header-color: #b9c8e0;
+@third-blue: #43759e;
 @background-grey: #f7f7f7;
 @white: #ffffff;
+@black: #000000;
+@grey-f2: #f2f2f2;
 
 // widths
 @body-width: 820px;
@@ -16,22 +19,84 @@ html, body {
   font-family: Oxygen, sans-serif;
   font-size: 14px;
   ul {
-    margin: 0;
+    margin: 0 0 0 10px;
     padding-left: 10px;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: @black;
 }
 
 .header {
   background-color: @main-color;
   color: @header-color;
   padding: 10px 20px;
+  border-bottom: 2px solid #b9c8e0;
+
+  .innerHeader {
+    width: @body-width;
+    margin: 0 auto;
+
+    .headshot {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+    .intro {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+      margin-top: 8px;
+
+      .name {
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .title {
+        font-size: 20px;
+      }
+    }
+    .contact {
+      display: inline-block;
+      float: right;
+      margin-top: 5px;
+
+      .link {
+        display: block;
+        color: @header-color;
+        text-align: right;
+
+        &:hover {
+          color: @white;
+        }
+
+        &.pdf {
+          background-color: @third-blue;
+          color: @grey-f2;
+          text-align: center;
+          margin-bottom: 10px;
+          padding: 3px 0;
+          border-radius: 3px;
+          border: 1px solid @header-color;
+
+          &:hover {
+            background-color: @header-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .bodyContent {
   background-color: @white;
   width: @body-width;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   padding: @body-padding;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   .divider {
     border: none;
@@ -42,11 +107,14 @@ html, body {
   .bodySection {
     width: @body-width;
     margin: 15px 0;
+
     .title {
       display: inline-block;
       width: 185px;
       margin-right: 15px;
       vertical-align: top;
+      font-size: 16px;
+      font-weight: bold;
     }
     .content {
       display: inline-block;
@@ -54,28 +122,29 @@ html, body {
       
       .skillsList {
         padding-left: 0;
+        margin: 0;
 
         li {
           display: inline-block;
           list-style: none;
           width: 195px;
-          margin-right: 5px;
+          margin: 4px 5px 4px 0;
         }
       }
 
       .jobRow {
-        //height: 70px;
         margin-bottom: 10px;
   
         .logoHolder {
+          width: 100px;
           display: inline-block;
           margin-right: 5px;
           vertical-align: middle;
+          text-align: center;
 
           .logo {
             display: inline-block;
             vertical-align: middle;
-            float: right;
           }
         }
 
@@ -93,11 +162,15 @@ html, body {
           }
         }
       }
+
+      li {
+        margin-bottom: 5px;
+      }
       
       .mainInternship {
-        margin-bottom: 10px;
-        & .jobRow {
-          margin-bottom: 5px;
+        margin-bottom: 30px;
+        .jobRow {
+          margin-bottom: 10px;
         }
       }
 
@@ -105,11 +178,14 @@ html, body {
           display: inline-block;
           width: 300px;
 
-          .logoHolder {
-              width: 100px;
-           }
            .job {
              width: 190px;
+            .companyName {
+              font-size: 16px;
+            }
+            .jobTitle {
+              font-size: 14px;
+            }
            }
 
           &.right {
@@ -143,6 +219,11 @@ html, body {
     height: 30px;
   }
 
+  &.mozilla {
+    width: 90px;
+    height: 25px;
+  }
+
   &.short {
     height: 50px;
   }
@@ -158,6 +239,5 @@ html, body {
   &.wider {
     width: 100px;
   }
-
 }
 
