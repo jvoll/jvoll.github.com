@@ -129,6 +129,7 @@ html, body {
           list-style: none;
           width: 195px;
           margin: 4px 5px 4px 0;
+          vertical-align: top;
         }
       }
 
@@ -160,6 +161,10 @@ html, body {
           .jobTitle {
             font-size: 18px;
           }
+
+          .jobMetaData {
+            padding-top: 3px;
+          }
         }
       }
 
@@ -175,33 +180,36 @@ html, body {
       }
 
       .internshipNoDetail {
-          display: inline-block;
-          width: 300px;
+        display: inline-block;
+        width: 300px;
 
-           .job {
-             width: 190px;
-            .companyName {
-              font-size: 16px;
-            }
-            .jobTitle {
-              font-size: 14px;
-            }
-           }
+        .job {
+           width: 190px;
+          .companyName {
+            font-size: 16px;
+          }
+        }
 
-          &.right {
-            .logoHolder {
-              width: 90px;
-            }
-            .job {
-              width: 200px;
-            }
+        &.right {
+          .logoHolder {
+            width: 90px;
           }
-          &.left {
-            margin-right: 10px;
+          .job {
+            width: 200px;
           }
+        }
+        &.left {
+          margin-right: 10px;
+        }
+      }
+
+      .project {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        font-weight: bold;
       }
     }
-
   }
 } 
 
@@ -210,7 +218,7 @@ html, body {
   height: 60px;
 
   &.infonova {
-    width: 80px;
+    width: 90px;
     height: 30px;
   }
 
