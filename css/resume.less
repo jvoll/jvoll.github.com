@@ -1,0 +1,251 @@
+// colors
+@main-color: #1d365d;
+@header-color: #b9c8e0;
+@third-blue: #43759e;
+@background-grey: #f7f7f7;
+@white: #ffffff;
+@black: #000000;
+@grey-f2: #f2f2f2;
+
+// widths
+@body-width: 820px;
+@body-padding: 15px;
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: @background-grey;
+  font-family: Oxygen, sans-serif;
+  font-size: 14px;
+  ul {
+    margin: 0 0 0 10px;
+    padding-left: 10px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: @black;
+}
+
+.header {
+  background-color: @main-color;
+  color: @header-color;
+  padding: 10px 20px;
+  border-bottom: 2px solid #b9c8e0;
+
+  .innerHeader {
+    width: @body-width;
+    margin: 0 auto;
+
+    .headshot {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+    .intro {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+      margin-top: 8px;
+
+      .name {
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .title {
+        font-size: 20px;
+      }
+    }
+    .contact {
+      display: inline-block;
+      float: right;
+      margin-top: 5px;
+
+      .link {
+        display: block;
+        color: @header-color;
+        text-align: right;
+
+        &:hover {
+          color: @white;
+        }
+
+        &.pdf {
+          background-color: @third-blue;
+          color: @grey-f2;
+          text-align: center;
+          margin-bottom: 10px;
+          padding: 3px 0;
+          border-radius: 3px;
+          border: 1px solid @header-color;
+
+          &:hover {
+            background-color: @header-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bodyContent {
+  background-color: @white;
+  width: @body-width;
+  margin: 0 auto 30px auto;
+  padding: @body-padding;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: @header-color;
+  }
+  
+  .bodySection {
+    width: @body-width;
+    margin: 15px 0;
+
+    .title {
+      display: inline-block;
+      width: 185px;
+      margin-right: 15px;
+      vertical-align: top;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .content {
+      display: inline-block;
+      width: 615px;
+      
+      .skillsList {
+        padding-left: 0;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          list-style: none;
+          width: 195px;
+          margin: 4px 5px 4px 0;
+          vertical-align: top;
+        }
+      }
+
+      .jobRow {
+        margin-bottom: 10px;
+  
+        .logoHolder {
+          width: 100px;
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: middle;
+          text-align: center;
+
+          .logo {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .job {
+          display: inline-block;
+          vertical-align: middle;
+          
+          .companyName {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          .jobTitle {
+            font-size: 18px;
+          }
+
+          .jobMetaData {
+            padding-top: 3px;
+          }
+        }
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+      
+      .mainInternship {
+        margin-bottom: 30px;
+        .jobRow {
+          margin-bottom: 10px;
+        }
+      }
+
+      .internshipNoDetail {
+        display: inline-block;
+        width: 300px;
+
+        .job {
+           width: 190px;
+          .companyName {
+            font-size: 16px;
+          }
+        }
+
+        &.right {
+          .logoHolder {
+            width: 90px;
+          }
+          .job {
+            width: 200px;
+          }
+        }
+        &.left {
+          margin-right: 10px;
+        }
+      }
+
+      .project {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+    }
+  }
+} 
+
+.logo {
+  width: 60px;
+  height: 60px;
+
+  &.infonova {
+    width: 90px;
+    height: 30px;
+  }
+
+  &.varicent {
+    width: 90px;
+    height: 70px;
+  }
+
+  &.mozilla {
+    width: 90px;
+    height: 25px;
+  }
+
+  &.short {
+    height: 50px;
+  }
+
+  &.shorter {
+    height: 20px;
+  }
+
+  &.wide {
+    width: 75px;
+  }
+    
+  &.wider {
+    width: 100px;
+  }
+}
+
