@@ -44,10 +44,6 @@ body ul {
   font-size: 20px;
 }
 .header .innerHeader .contact {
-<<<<<<< HEAD
-=======
-  display: inline-block;
->>>>>>> 4d636f5b7b8d0d7a20ccdfe42c448fb30116de8a
   float: right;
   margin-top: 5px;
 }
