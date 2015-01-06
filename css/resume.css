@@ -172,6 +172,7 @@ body ul {
 .logo {
   width: 60px;
   height: 60px;
+  text-decoration: none;
 }
 .logo.infonova {
   width: 90px;
