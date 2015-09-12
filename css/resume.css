@@ -135,6 +135,9 @@ body ul {
 .bodyContent .bodySection .content .jobRow .job .jobMetaData {
   padding-top: 3px;
 }
+.bodyContent .bodySection .content .jobDetail {
+  margin-bottom: 20px;
+}
 .bodyContent .bodySection .content li {
   margin-bottom: 5px;
 }
@@ -188,6 +191,9 @@ body ul {
 }
 .logo.short {
   height: 50px;
+}
+.logo.shortish {
+  height: 35px;
 }
 .logo.shorter {
   height: 20px;
